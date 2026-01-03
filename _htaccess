@@ -17,3 +17,4 @@ Options -Indexes
 <FilesMatch "(\.htaccess|\.env|composer\.json|composer\.lock|pdo\.php)">
     Require all denied
 </FilesMatch>
+# Optional: prevent access to .htaccess and sensitive files
