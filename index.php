@@ -21,12 +21,12 @@ $profiles = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <!DOCTYPE html>
 <html>
 <head>
-    <title>594aae7e's Resume Registry</title>
+    <title>5b33c4d9's Resume Registry</title>
     <?php require_once "bootstrap.php"; ?>
 </head>
 <body>
 <div class="container">
-    <h1>594aae7e's Resume Registry</h1>
+    <h1>5b33c4d9's Resume Registry</h1>
     
     <?php
     if (isset($error)) {
