@@ -1,3 +1,19 @@
+# Use index.php as the default file
 DirectoryIndex index.php
+
+# Disable directory listing
 Options -Indexes
-ErrorDocument 404 /index.php
+
+# Allow access to static files
+<FilesMatch "\.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf)$">
+    Require all granted
+</FilesMatch>
+
+# Optional: handle 404 for missing PHP pages by redirecting to index.php
+# Comment out if you want real 404s for missing pages
+# ErrorDocument 404 /index.php
+
+# Optional: prevent access to .htaccess and sensitive files
+<FilesMatch "(\.htaccess|\.env|composer\.json|composer\.lock|pdo\.php)">
+    Require all denied
+</FilesMatch>
