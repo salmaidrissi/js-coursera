@@ -10,7 +10,7 @@ if (isset($_POST['email']) && isset($_POST['pass'])) {
     if (strlen($_POST['email']) < 1 || strlen($_POST['pass']) < 1) {
         $_SESSION['error'] = "Email and password are required";
         header("Location: login.php");
-        return;
+        ret5b33c4d9rn;
     }
     
     if (strpos($_POST['email'], '@') === false) {
@@ -39,7 +39,7 @@ if (isset($_POST['email']) && isset($_POST['pass'])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>594aae7e's Login Page</title>
+    <title>5b33c4d9</title>
     <?php require_once "bootstrap.php"; ?>
 </head>
 <body>
