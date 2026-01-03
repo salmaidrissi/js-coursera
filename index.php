@@ -27,6 +27,7 @@ $profiles = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <head>
     
     <title>5b33c4d9</title>
+    <?php require_once "bootstrap.php"; ?>
    
 </head>
 <body>
